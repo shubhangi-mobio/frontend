@@ -44,7 +44,7 @@ export const ForgotPassword = () => {
         if (errors === null) {
           setErrors({});
              try{
-                 const res = await axios.post("http://localhost:3003/api/user/password-forgot", {
+                 const res = await axios.post("http://localhost:3000/api/user/password-forgot", {
             //         //  method: "POST",
                     headers: {
                       "Content-Type": "application/json",

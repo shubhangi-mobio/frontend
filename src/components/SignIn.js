@@ -49,7 +49,7 @@ export const SignIn = ({ userAuthentication }) => {
     if (errors === null) {
       setErrors({});
       try {
-        const res = await axios.post("http://localhost:3003/api/user/login", {
+        const res = await axios.post("http://localhost:3000/api/user/login", {
           // method: "GET",
           headers: {
             "Content-Type": "application/json",

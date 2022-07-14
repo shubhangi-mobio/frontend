@@ -48,7 +48,7 @@ export const ResetPassword = () => {
     if (errors === null) {
       setErrors({});
          try{
-             const res = await axios.put("http://localhost:3003/api/user/password-reset", {
+             const res = await axios.put("http://localhost:3000/api/user/password-reset", {
         //         //  method: "POST",
                 headers: {
                   "Content-Type": "application/json",
