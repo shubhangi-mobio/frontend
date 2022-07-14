@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Promo management",
+        "icon": "bi bi-percent",
+        "path": "/"
+    },
+    {
+        "title": "Manage users",
+        "icon": "bi bi-person",
+        "childrens": [
+            {
+                "title": "All users",
+                "path": "/"
+            },
+            {
+                "title": "Merchants",
+                "path": "/about"
+            },
+            {
+                "title": "Admin",
+                "path": "/about"
+            }
+        ]  
+    },
+    {
+        "title": "SKU",
+        "icon": "bi bi-percent",
+        "path": "/"
+    },
+    {
+        "title": "Brands",
+        "icon": "bi bi-percent",
+        "path": "/"
+    },
+    {
+        "title": "Shelf",
+        "icon": "bi bi-card-text",
+        "path": "/"
+    },
+    {
+        "title": "Error report",
+        "icon": "bi bi-exclamation-triangle",
+        "path": "/"
+    },
+    {
+        "title": "Snapshot/History",
+        "icon": "bi bi-clock-history",
+        "path": "/"
+    },
+    {
+        "title": "CMC",
+        "icon": "bi bi-cloud-arrow-up",
+        "path": "/"
+    },
+    {
+        "title": "Notifications",
+        "icon": "bi bi-bell",
+        "path": "/"
+
+    }
+]
