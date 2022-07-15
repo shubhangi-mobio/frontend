@@ -20,7 +20,7 @@ export const ResetPassword = () => {
 		password: '',
 		confirmPassword: '',
 	});
-  const param = useParams();
+
 	const [errors, setErrors] = useState({});
 	const navigate = useNavigate();
 
@@ -38,6 +38,9 @@ export const ResetPassword = () => {
 		errors[e.target.id] = null;
 		setValues(newData);
 	}
+         const queryString = window.location.search;
+const parameters = new URLSearchParams(queryString);
+const value = parameters.get('token');
 
 
 	const handleSubmit = async (e) => {
@@ -48,7 +51,7 @@ export const ResetPassword = () => {
     if (errors === null) {
       setErrors({});
          try{
-             const res = await axios.put("http://localhost:3000/api/user/password-reset", {
+             const res = await axios.post("http://localhost:3000/api/user/resetpassword", {
         //         //  method: "POST",
                 headers: {
                   "Content-Type": "application/json",
@@ -59,9 +62,6 @@ export const ResetPassword = () => {
                     confirmPassword: values.confirmPassword
               }
               );
-          const queryParams = new URLSearchParams(window.location.search);
-       const token = queryParams.get('token');
-      console.log("token",window.location.search.split('?token=')[1]);
 
               setValues(res.data);
               console.log(res);
