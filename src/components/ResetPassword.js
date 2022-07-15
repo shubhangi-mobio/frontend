@@ -39,12 +39,8 @@ export const ResetPassword = () => {
 		setValues(newData);
 	}
 
-         const queryString = window.location.search;
- const { token } = res.data;
-localStorage.setItem('token',token, res.headers.authorization);
-const parameters = new URLSearchParams(queryString);
-const value = parameters.get('token');
-console.log(value);
+const [searchParams, setSearchParams] = useSearchParams();
+searchParams.get("token")
 
 
 	const handleSubmit = async (e) => {
