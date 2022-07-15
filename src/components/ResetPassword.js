@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 import "./all.css";
 import logo from "../Theme/images/logo.png";
 import {useParams} from "react-router-dom"
+import { useLocation } from "react-router-dom";
+
 import {Link} from "react-router-dom"
 import { BiShow, BiHide } from "react-icons/bi";
 import {Footer} from "./Footer";
@@ -14,12 +16,18 @@ import axios from "axios";
 export const ResetPassword = () => {
 
   const [passwordType, setPasswordType] = useState("password");
+
+const [searchParams, setSearchParams] = useSearchParams();
   
 	const [cnfPasswordType, setCnfPasswordType] = useState("password");
 	const [values, setValues] = useState({
 		password: '',
 		confirmPassword: '',
 	});
+
+const search = useLocation().search;
+    const token = new URLSearchParams(search).get("token");
+    console.log(token)
 
 	const [errors, setErrors] = useState({});
 	const navigate = useNavigate();
@@ -39,8 +47,6 @@ export const ResetPassword = () => {
 		setValues(newData);
 	}
 
-const [searchParams, setSearchParams] = useSearchParams();
-searchParams.get("token")
 
 
 	const handleSubmit = async (e) => {
@@ -102,7 +108,8 @@ searchParams.get("token")
         }
         setCnfPasswordType("password")
       }
-
+const id = window.location.search.split("=")[1];
+console.log(id); 
     return(
         <> 
          <div className="profile_logo">
