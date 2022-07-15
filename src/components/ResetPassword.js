@@ -3,7 +3,7 @@ import "./all.css";
 import logo from "../Theme/images/logo.png";
 import {useParams} from "react-router-dom"
 import { useLocation } from "react-router-dom";
-
+import { useSearchParams } from 'react-router-dom'
 import {Link} from "react-router-dom"
 import { BiShow, BiHide } from "react-icons/bi";
 import {Footer} from "./Footer";
