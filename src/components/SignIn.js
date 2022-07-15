@@ -64,7 +64,7 @@ export const SignIn = ({ userAuthentication }) => {
         // localStorage.setItem('token', token,res.data.JWT_TOKEN);
 
         const { token } = res.data;
-        localStorage.setItem('JWT_SECRET', token, res.headers.authorization);
+        localStorage.setItem(token, res.headers.authorization);
 
         if (res && res.status === 200) {
           return setTimeout(() => {
