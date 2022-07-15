@@ -38,7 +38,9 @@ export const ResetPassword = () => {
 		errors[e.target.id] = null;
 		setValues(newData);
 	}
+
          const queryString = window.location.search;
+ const { token } = res.data;
 const parameters = new URLSearchParams(queryString);
 const value = parameters.get('token');
 console.log(value);
