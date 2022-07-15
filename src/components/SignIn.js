@@ -37,10 +37,7 @@ export const SignIn = ({ userAuthentication }) => {
     setValues(newData);
   };
 
-  // function saveJWT(res){
-  //   localStorage.setItem('JWT_SECRET',res.headers.authorization);
-  // }
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("clicckeed");
@@ -60,9 +57,7 @@ export const SignIn = ({ userAuthentication }) => {
           password: values.password,
         });
         setValues(res.data);
-        // const { token } = res.data;
-        // localStorage.setItem('token', token,res.data.JWT_TOKEN);
-
+      
         const { token } = res.data;
         localStorage.setItem('token',token, res.headers.authorization);
 
