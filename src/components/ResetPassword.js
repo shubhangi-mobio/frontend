@@ -62,7 +62,7 @@ export const ResetPassword = () => {
               const { token } = res.data;
               // localStorage.setItem('JWT_SECRET',token,res.headers.authorization);
 
-              localStorage.getItem('token', token,res.data.JWT_TOKEN);
+              localStorage.getItem('token', token,res.headers.authorization);
 
               setValues(res.data);
               console.log(res);
