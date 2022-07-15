@@ -16,7 +16,7 @@ export const Sidebaar = () => {
    const logoutHandle = async (e) => {
       e.preventDefault();
       console.log('clicckeed')
-      localStorage.removeItem('JWT_SECRET');
+      localStorage.removeItem('token');
       navigate("/");
      
           //  try{

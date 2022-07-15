@@ -57,11 +57,8 @@ export const Profile = () =>{
                         confirmPassword: values.confirmPassword
                   }
                   );
-                  const { token } = res.data;
-                  localStorage.setItem('JWT_SECRET',token,res.headers.authorization);
-    
-                //   localStorage.getItem('token', token,res.data.JWT_TOKEN);
-    
+                      const { token } = res.data;
+        localStorage.setItem('token',token, res.headers.authorization);
                   setValues(res.data);
                   console.log(res);
                   if (res && res.status === 200) {
