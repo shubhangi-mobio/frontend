@@ -38,8 +38,11 @@ export const ResetPassword = () => {
 		errors[e.target.id] = null;
 		setValues(newData);
 	}
-const [searchParams, setSearchParams] = useSearchParams();
-searchParams.get("token")
+         const queryString = window.location.search;
+const parameters = new URLSearchParams(queryString);
+const value = parameters.get('token');
+console.log(value);
+
 
 	const handleSubmit = async (e) => {
     e.preventDefault();
@@ -49,7 +52,7 @@ searchParams.get("token")
     if (errors === null) {
       setErrors({});
          try{
-             const res = await axios.post("http://localhost:3000/api/user/resetpassword", {
+             const res = await axios.post(`http://localhost:3000/api/user/resetpassword?token=${token}`, {
         //         //  method: "POST",
                 headers: {
                   "Content-Type": "application/json",
