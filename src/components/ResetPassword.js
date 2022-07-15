@@ -22,9 +22,9 @@ export const ResetPassword = () => {
 		confirmPassword: '',
 	});
 
-
-const urlParams = new URLSearchParams(window.location.search);
-const token = urlParams.get('token');
+const queryParams = new URLSearchParams(window.location.search);
+       const token = queryParams.get('token');
+      console.log("token",window.location.search.split('?token=')[1]);
 
 	const [errors, setErrors] = useState({});
 	const navigate = useNavigate();
