@@ -10,7 +10,7 @@
         "childrens": [
             {
                 "title": "All users",
-                "path": "/"
+                "path": "/user"
             },
             {
                 "title": "Merchants",

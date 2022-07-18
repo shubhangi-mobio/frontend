@@ -1,0 +1,26 @@
+@import 'antd/dist/antd.css';
+
+ .logo {
+    height: 32px;
+    margin: 16px;
+  }
+
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+
+  .sider {
+    overflow: auto;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: darkgrey;
+  }
