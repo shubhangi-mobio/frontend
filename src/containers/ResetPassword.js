@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 import { Form, FormGroup, Input} from "reactstrap";
 import axios from "axios";
 import {useLocation} from "react-router-dom"
-import queryString from 'query-string';
+// import queryString from 'query-string';
 
 const baseUrl = "http://localhost:3003/api/user/password-reset"
 

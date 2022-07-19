@@ -3,7 +3,7 @@ import './App.css';
 import {  Routes, Route } from 'react-router-dom';
 import {SignIn} from "./containers/SignIn";
 import {Sidebaar} from "./components/Sidebaar"
-import {SidebaarData} from "./components/Sidebaardata"
+import {SidebaarData} from "./components/SidebaarData"
 import {Header} from "./components/Layout/Header";
 import {Footer} from "./components/Layout/Footer";
 import {ForgotPassword} from "./containers/ForgotPassword"

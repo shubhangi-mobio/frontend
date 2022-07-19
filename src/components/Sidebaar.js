@@ -1,6 +1,6 @@
 import React from 'react';
 import items from "../data.json"
-import {SidebaarData} from "./Sidebaardata"
+import { SidebaarData } from "./SidebaarData"
 import logo from "../Theme/images/Logo1.png"
 import {useNavigate} from "react-router-dom";
 import { AiOutlineLogout } from "react-icons/ai";
