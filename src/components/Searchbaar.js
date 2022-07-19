@@ -1,7 +1,8 @@
 import React from "react";
-import {Header} from "../components/Layout/Header";
+import {Header} from "./Header";
 import "./searchbar.css"
 import SearchIcon from '@mui/icons-material/Search';
+import { AiOutlineUserAdd } from "react-icons/ai";
 
 
 export const Searchbaar = () => {
@@ -21,7 +22,8 @@ export const Searchbaar = () => {
                     <SearchIcon id="search"/>
                    
                     </div>
-                       
+                        <button className = "btn-add-btn" 
+                        > <AiOutlineUserAdd />  Add user </button>   
         </div> 
        
         

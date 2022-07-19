@@ -1,0 +1,40 @@
+.user_container{
+    height:48vh;
+    width:180vh;
+    margin-top:24px;
+    padding:24px ;
+    gap:16px;
+    margin-left:16.5%;
+    background-color:white;
+}
+
+.btn-btn-user{
+    width:86px;
+    height:32px;
+    background: white;
+    border: 1px solid gray;
+    color:black;
+    
+}
+
+.btn-btn-user:hover{
+    background-color:#0F2A6F;
+    color:white;
+    cursor: pointer;
+}
+
+.user-filter{
+   margin-left: 76%;
+   margin-top:-3%;
+}
+
+.user-sort{
+    margin-left: 85%;
+   margin-top:-3%;
+}
+
+.user-icon{
+    margin-left: 94%;
+   margin-top:-2.5%;
+   
+}
